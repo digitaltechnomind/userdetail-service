@@ -13,8 +13,8 @@ import com.trng.assignment1.orderdetail.service.OrderDetailService;
 @SpringBootApplication
 public class OrderdetailServiceApplication {
 	
-	private static String ORDER_URL="http://localhost:8091/order";
-	private static String USER_URL="http://localhost:8090/user";;
+	private static String ORDER_URL="http://order-service.default.svc.cluster.local/order";
+	private static String USER_URL="http://user-service.default.svc.cluster.local/user";;
 
 	public static void main(String[] args) {
 		SpringApplication.run(OrderdetailServiceApplication.class, args);
